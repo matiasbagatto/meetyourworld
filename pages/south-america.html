@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Meet Your World - South America</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="../index.html">
+                    <img class="nav__logo-img" src="../logo/logo.png" alt="logo de la pagina">
+                </a>
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./donate.html">
+                            <button class="btn">Donate</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="categories">
+                <h1 class="categories__title">CATEGORIES</h1>
+                <ul class="categories__list">
+                    <li>
+                        <a class="categories__link" href="#iconic">Iconic</a>
+                    </li>
+                    <li>
+                        <a class="categories__link" href="#food">Food</a>
+                    </li>
+                    <li>
+                        <a class="categories__link" href="#landscapes">Landscapes</a>
+                    </li>
+                    <li>
+                        <a class="categories__link" href="#architecture">Architecture</a>
+                    </li>
+                    <li>
+                        <a class="categories__link" href="#sports">Sports</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="continents">
+                <div class="continents__card" id="iconic">
+                    <h2 class="continents__title">ICONIC</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+                <div class="continents__card" id="food">
+                    <h2 class="continents__title">FOOD</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+                <div class="continents__card" id="landscapes">
+                    <h2 class="continents__title">LANDSCAPES</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+                <div class="continents__card" id="architecture">
+                    <h2 class="continents__title">ARCHITECTURE</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+                <div class="continents__card" id="sports">
+                    <h2 class="continents__title">SPORTS</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+            </section>
+        </main>
+
+        <!-- <main>
+        <section class="ctg-section">
+            <h1>CATEGORIES</h1>
+            <ul class="ctg__links">
+                <li class="ctg__item"><a href="#iconic">Iconic</a></li>
+                <li class="ctg__item"><a href="#food">Food</a></li>
+                <li class="ctg__item"><a href="#landscapes">Landscapes</a></li>
+                <li class="ctg__item"><a href="#architecture">Architecture</a></li>
+                <li class="ctg__item"><a href="#sports">Sports</a></li>
+            </ul>
+        </section>
+
+        <section id="iconic" class="ctg-content">
+            <h2>ICONIC</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1617721751087-ae4a46ebb980?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                    alt="iguazu-falls">
+                <img src="https://images.unsplash.com/photo-1544206709-5cdc63e3ed72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                    alt="machu-picchu">
+            </div>
+        </section>
+
+        <section id="food" class="ctg-content">
+            <h2>FOOD</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="asado">
+                <img src="https://images.unsplash.com/photo-1619926096619-5956ab4dfb1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt="empanadas">
+            </div>
+        </section>
+
+        <section id="landscapes" class="ctg-content">
+            <h2>LANDSCAPES</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1626292816644-97328bfb412a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt="glaciar-perito-moreno">
+                <img src="https://images.unsplash.com/photo-1610562624885-c09fed45cb07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="valle-de-los-condores">
+            </div>
+        </section>
+
+        <section id="architecture" class="ctg-content">
+            <h2>ARCHITECTURE</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1534943441045-1009d7cb0bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=808&q=80"
+                    alt="cartagena">
+                <img src="https://images.unsplash.com/photo-1612294037637-ec328d0e075e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="caminito">
+            </div>
+        </section>
+
+        <section id="sports" class="ctg-content">
+            <h2>SPORTS</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1632337212325-3588ac068e88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                    alt="football">
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1607&q=80"
+                    alt="beach-volley">
+            </div>
+        </section>
+    </main> -->
+
+        <footer>
+            <div class="footer">
+                <p class="footer__text">
+                    <a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022
+                </p>
+                <div class="social">
+                    <a class="social__link" href="https://twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter fa-2x social__icon"></i>
+                    </a>
+                    <a class="social__link" href="https://github.com/matiasbagatto" target="_blank">
+                        <i class="fa-brands fa-github fa-2x social__icon"></i>
+                    </a>
+                    <a class="social__link" href="https://youtube.com" target="_blank">
+                        <i class="fa-brands fa-youtube fa-2x social__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/bfebc29d01.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

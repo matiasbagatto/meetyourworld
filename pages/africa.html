@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Meet Your World - Africa</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="../index.html">
+                    <img class="nav__logo-img" src="../logo/logo.png" alt="logo de la pagina">
+                </a>
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./donate.html">
+                            <button class="btn">Donate</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="categories">
+                <h1 class="categories__title">CATEGORIES</h1>
+                <ul class="categories__list">
+                    <li>
+                        <a class="categories__link" href="#iconic">Iconic</a>
+                    </li>
+                    <li>
+                        <a class="categories__link" href="#food">Food</a>
+                    </li>
+                    <li>
+                        <a class="categories__link" href="#landscapes">Landscapes</a>
+                    </li>
+                    <li>
+                        <a class="categories__link" href="#architecture">Architecture</a>
+                    </li>
+                    <li>
+                        <a class="categories__link" href="#sports">Sports</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="continents">
+                <div class="continents__card" id="iconic">
+                    <h2 class="continents__title">ICONIC</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+                <div class="continents__card" id="food">
+                    <h2 class="continents__title">FOOD</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+                <div class="continents__card" id="landscapes">
+                    <h2 class="continents__title">LANDSCAPES</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+                <div class="continents__card" id="architecture">
+                    <h2 class="continents__title">ARCHITECTURE</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+                <div class="continents__card" id="sports">
+                    <h2 class="continents__title">SPORTS</h2>
+                    <img src="#" alt="carousel de imagenes">
+                </div>
+            </section>
+        </main>
+
+        <!-- <main>
+        <section class="ctg-section">
+            <h1>CATEGORIES</h1>
+            <ul class="ctg__links">
+                <li class="ctg__item"><a href="#iconic">Iconic</a></li>
+                <li class="ctg__item"><a href="#food">Food</a></li>
+                <li class="ctg__item"><a href="#landscapes">Landscapes</a></li>
+                <li class="ctg__item"><a href="#architecture">Architecture</a></li>
+                <li class="ctg__item"><a href="#sports">Sports</a></li>
+            </ul>
+        </section>
+
+        <section id="iconic" class="ctg-content">
+            <h2>ICONIC</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1595040587796-bc390dee8840?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                    alt="giza-pyramids">
+                <img src="https://images.unsplash.com/photo-1618811308896-d279d72fdf4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                    alt="victoria-falls">
+            </div>
+        </section>
+
+        <section id="food" class="ctg-content">
+            <h2>FOOD</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80"
+                    alt="sauteed-dish">
+                <img src="https://images.unsplash.com/photo-1564834744159-ff0ea41ba4b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="jollof-rice">
+            </div>
+        </section>
+
+        <section id="landscapes" class="ctg-content">
+            <h2>LANDSCAPES</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1632063280280-eb57fc7a8166?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="swatberg-mountains">
+                <img src="https://images.unsplash.com/photo-1641883553689-b7488968774f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                    alt="chapmans-peak">
+            </div>
+        </section>
+
+        <section id="architecture" class="ctg-content">
+            <h2>ARCHITECTURE</h2>
+            <div class="img-layout">
+                <img src="https://images.unsplash.com/photo-1590273809342-5c6ec2038629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                    alt="cape-town">
+                <img src="https://images.unsplash.com/photo-1624896909753-ea7ebbbb9ded?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="skopska-fortress">
+            </div>
+        </section>
+
+        <section id="sports" class="ctg-content">
+            <h2>SPORTS</h2>
+            <div class="img-layout">
+                <img src="https://www.okayafrica.com/media-library/image.jpg?id=10400598&width=885&quality=80"
+                    alt="nguni">
+                <img src="https://www.okayafrica.com/media-library/image.jpg?id=10400596&width=885&quality=80"
+                    alt="donkey-racing">
+            </div>
+        </section>
+    </main> -->
+
+        <footer>
+            <div class="footer">
+                <p class="footer__text">
+                    <a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022
+                </p>
+                <div class="social">
+                    <a class="social__link" href="https://twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter fa-2x social__icon"></i>
+                    </a>
+                    <a class="social__link" href="https://github.com/matiasbagatto" target="_blank">
+                        <i class="fa-brands fa-github fa-2x social__icon"></i>
+                    </a>
+                    <a class="social__link" href="https://youtube.com" target="_blank">
+                        <i class="fa-brands fa-youtube fa-2x social__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/bfebc29d01.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

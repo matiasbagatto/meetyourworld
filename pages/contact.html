@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>MYW - Contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="../index.html">
+                    <img class="nav__logo-img" src="../logo/logo.png" alt="logo de la pagina">
+                </a>
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./donate.html">
+                            <button class="btn">Donate</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contact-container">
+                <section class="contact">
+                    <form action="#" class="contact__form">
+                        <div class="contact__section">
+                            <label class="contact__label" for="firstName">First Name</label>
+                            <input class="contact__input" id="firstName" type="text" name="firstName">
+                        </div>
+                        <div class="contact__section">
+                            <label class="contact__label" for="lastName">Last Name</label>
+                            <input class="contact__input" id="lastName" type="text" name="lastName">
+                        </div>
+                        <div class="contact__section">
+                            <label class="contact__label" for="email">Email</label>
+                            <input class="contact__input" id="email" type="email" name="email">
+                        </div>
+                        <div class="contact__section">
+                            <label class="contact__label" for="comments">Any suggestions?</label>
+                            <textarea class="contact__input" name="comments" id="comments" cols="30"
+                                rows="10"></textarea>
+                        </div>
+                        <div class="contact-section">
+                            <input class="contact__input" id="newsletter" type="checkbox" name="newsletter" checked>
+                            <label class="contact__label" for="newsletter">Subscribe to newsletter</label>
+                        </div>
+                        <button class="btn btn--submit">Submit</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <p class="footer__text">
+                    <a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022
+                </p>
+                <div class="social">
+                    <a class="social__link" href="https://twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter fa-2x social__icon"></i>
+                    </a>
+                    <a class="social__link" href="https://github.com/matiasbagatto" target="_blank">
+                        <i class="fa-brands fa-github fa-2x social__icon"></i>
+                    </a>
+                    <a class="social__link" href="https://youtube.com" target="_blank">
+                        <i class="fa-brands fa-youtube fa-2x social__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/bfebc29d01.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
