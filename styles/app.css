@@ -3,8 +3,15 @@ body {
     background-color: #F8F9FA;
 }
 
+/* --- inicio navbar ---*/
+
 .header {
     border-bottom: 1px solid #E9ECEF;
+}
+
+.navbar--max-width {
+    max-width: 1320px;
+    margin: auto;
 }
 
 .collapse--custom {
@@ -52,6 +59,57 @@ body {
     background-color: #6096BA;
 }
 
+/* --- fin navbar ---*/
+
+/* --- inicio banner --- */
+
+.banner-hero {
+    background-image: url("../images/banner.png");
+    border-bottom: 1px solid #E9ECEF;
+}
+
+.banner {
+    height: 30vh;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner__title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.banner__title-span {
+    border-bottom: 2px solid #6096BA;
+}
+
+.search-box {
+    width: 100%;
+    padding: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: url("../icons/magnifying-glass-solid.svg") no-repeat 18px 18px;
+    background-size: 20px;
+    background-position: 95%;
+}
+
+/* --- fin banner --- */
+
+/* --- inicio main --- */
+
+
+
+/* --- fin main --- */
+
+/* --- inicio media queries --- */
+
 @media (max-width: 354px) {
     .logo {
         width: 215px;
@@ -65,3 +123,5 @@ body {
         justify-content: space-between;
     }
 }
+
+/* --- fin media queries --- */
