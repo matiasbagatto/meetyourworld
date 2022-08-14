@@ -70,12 +70,12 @@ body {
 
 .banner {
     height: 30vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
     max-width: 768px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .banner__title {
@@ -102,11 +102,59 @@ body {
 
 /* --- fin banner --- */
 
-/* --- inicio main --- */
+/* --- inicio exploreSection --- */
+
+.explore-container {
+    border-bottom: 1px solid #E9ECEF;
+}
+
+.explore {
+    max-width: 1200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore__title {
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: 5px underline #6096BA;
+}
+
+.explore__list {
+    max-width: 720px;
+    height: 40vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.explore__link {
+    transition: all 0.25s ease;
+    color: black;
+}
+
+.explore__link:hover {
+    text-decoration: none;
+    color: #6096BA;
+}
+
+/* --- fin exploreSection --- */
+
+/* --- inicio mostPopularSection --- */
 
 
 
-/* --- fin main --- */
+/* --- fin mostPopularSection --- */
 
 /* --- inicio media queries --- */
 
@@ -120,6 +168,23 @@ body {
     .navbar-nav--custom {
         width: 40vw;
         max-width: 460px;
+        justify-content: space-between;
+    }
+
+    .explore {
+        padding: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .explore__title {
+        padding-bottom: 0;
+    }
+
+    .explore__list {
+        width: 65vw;
+        height: auto;
+        flex-direction: row;
         justify-content: space-between;
     }
 }
