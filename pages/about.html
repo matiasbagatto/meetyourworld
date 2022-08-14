@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,102 +16,114 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <nav class="nav">
-                <a href="../index.html">
-                    <img class="nav__logo-img" src="../logo/logo.png" alt="logo de la pagina">
-                </a>
-                <ul class="nav__list">
-                    <li>
-                        <a class="nav__link" href="../index.html">Home</a>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../logo/logo.png" alt="logo de la pagina">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse collapse--custom" id="navbarNav">
+                <ul class="navbar-nav navbar-nav--custom">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--custom" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <a class="nav__link" href="./about.html">About</a>
+                    <li class="nav-item active active--custom">
+                        <a class="nav-link nav-link--custom" href="./about.html">About <span
+                                class="sr-only">(current)</span></a>
                     </li>
-                    <li>
-                        <a class="nav__link" href="./contact.html">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--custom" href="./contact.html">Contact</a>
                     </li>
-                    <li>
-                        <a class="nav__link" href="./donate.html">
-                            <button class="btn">Donate</button>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--custom" href="./donate.html"><button
+                                class="btn-donate">Donate</button></a>
                     </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <main>
-            <section class="about">
-                <div class="about__section">
-                    <div class="about__content">
-                        <h1 class="about__title">What is Meet Your World?</h1>
-                        <p class="about__text">
-                            Meet Your World is a dynamic webpage where you can find the image you are
-                            looking for fast and
-                            easy.</p>
-                    </div>
-                    <img class="about__illustration" src="../illustrations/what-is.svg" alt="What is Meet Your World?">
+    <main>
+        <section class="about">
+            <div class="about__section">
+                <div class="about__content">
+                    <h1 class="about__title">What is Meet Your World?</h1>
+                    <p class="about__text">
+                        Meet Your World is a dynamic webpage where you can find the image you are
+                        looking for fast and
+                        easy.</p>
                 </div>
-                <div class="about__section">
-                    <img class="about__illustration" src="../illustrations/our-goal.svg" alt="Our Goal">
-                    <div class="about__content">
-                        <h1 class="about__title">Our Goal</h1>
-                        <p class="about__text">
-                            Our main goal is to allow people to get to know their favorite places from the comfort of
-                            their
-                            home.
-                        </p>
-                    </div>
-                </div>
-                <div class="about__section">
-                    <div class="about__content">
-                        <h1 class="about__title">Feedback</h1>
-                        <p class="about__text">
-                            If you feel like you can help building this website, please <a class="about__link"
-                                href="./contact.html">contact
-                                us</a> and fill the form so you can share your ideas with us!
-                        </p>
-                    </div>
-                    <img class="about__illustration" src="../illustrations/feedback.svg" alt="Feedback">
-                </div>
-            </section>
-
-            <section class="explore explore--border-top">
-                <h2 class="explore__title">EXPLORE</h2>
-                <ul class="explore__list">
-                    <li><a class="explore__link" href="./asia.html">Asia</a></li>
-                    <li><a class="explore__link" href="./europe.html">Europe</a></li>
-                    <li><a class="explore__link" href="./africa.html">Africa</a></li>
-                    <li><a class="explore__link" href="./oceania.html">Oceania</a></li>
-                    <li><a class="explore__link" href="./north-america.html">North America</a></li>
-                    <li><a class="explore__link" href="./south-america.html">South America</a></li>
-                </ul>
-            </section>
-        </main>
-
-        <footer>
-            <div class="footer">
-                <p class="footer__text">
-                    <a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022
-                </p>
-                <div class="social">
-                    <a class="social__link" href="https://twitter.com" target="_blank">
-                        <i class="fa-brands fa-twitter fa-2x social__icon"></i>
-                    </a>
-                    <a class="social__link" href="https://github.com/matiasbagatto" target="_blank">
-                        <i class="fa-brands fa-github fa-2x social__icon"></i>
-                    </a>
-                    <a class="social__link" href="https://youtube.com" target="_blank">
-                        <i class="fa-brands fa-youtube fa-2x social__icon"></i>
-                    </a>
+                <img class="about__illustration" src="../illustrations/what-is.svg" alt="What is Meet Your World?">
+            </div>
+            <div class="about__section">
+                <img class="about__illustration" src="../illustrations/our-goal.svg" alt="Our Goal">
+                <div class="about__content">
+                    <h1 class="about__title">Our Goal</h1>
+                    <p class="about__text">
+                        Our main goal is to allow people to get to know their favorite places from the comfort of
+                        their
+                        home.
+                    </p>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class="about__section">
+                <div class="about__content">
+                    <h1 class="about__title">Feedback</h1>
+                    <p class="about__text">
+                        If you feel like you can help building this website, please <a class="about__link"
+                            href="./contact.html">contact
+                            us</a> and fill the form so you can share your ideas with us!
+                    </p>
+                </div>
+                <img class="about__illustration" src="../illustrations/feedback.svg" alt="Feedback">
+            </div>
+        </section>
+
+        <section class="explore explore--border-top">
+            <h2 class="explore__title">EXPLORE</h2>
+            <ul class="explore__list">
+                <li><a class="explore__link" href="./asia.html">Asia</a></li>
+                <li><a class="explore__link" href="./europe.html">Europe</a></li>
+                <li><a class="explore__link" href="./africa.html">Africa</a></li>
+                <li><a class="explore__link" href="./oceania.html">Oceania</a></li>
+                <li><a class="explore__link" href="./north-america.html">North America</a></li>
+                <li><a class="explore__link" href="./south-america.html">South America</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p class="footer__text">
+                <a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022
+            </p>
+            <div class="social">
+                <a class="social__link" href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter fa-2x social__icon"></i>
+                </a>
+                <a class="social__link" href="https://github.com/matiasbagatto" target="_blank">
+                    <i class="fa-brands fa-github fa-2x social__icon"></i>
+                </a>
+                <a class="social__link" href="https://youtube.com" target="_blank">
+                    <i class="fa-brands fa-youtube fa-2x social__icon"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/bfebc29d01.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
