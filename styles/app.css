@@ -288,6 +288,42 @@ body {
 
 /* --- fin about.html --- */
 
+/* --- inicio contact.html --- */
+
+.form-title {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 768px;
+    height: 80vh;
+    padding-bottom: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textarea-max-height {
+    resize: vertical;
+    max-height: 400px;
+}
+
+.btn-submit {
+    transition: all 0.25s ease;
+    color: white;
+    background-color: #6096BA;
+}
+
+.btn-submit:hover {
+    transform: scale(1.05);
+    color: white;
+    background-color: #6096BA;
+}
+
+/* --- fin contact.html --- */
+
 /* --- inicio media queries --- */
 
 @media (max-width: 354px) {
