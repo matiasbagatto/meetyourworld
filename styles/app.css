@@ -37,7 +37,7 @@ body {
     color: #6096BA !important;
 }
 
-.btn-donate {
+.btn--custom {
     padding: 6px 16px;
     transition: all 0.25s ease;
     font-family: inherit;
@@ -48,7 +48,7 @@ body {
     background-color: #E9ECEF;
 }
 
-.btn-donate:hover {
+.btn--custom:hover {
     transform: scale(1.05);
     color: white;
     background-color: #6096BA;
@@ -152,10 +152,6 @@ body {
 
 /* --- inicio explore --- */
 
-.explore-container {
-    border-bottom: 1px solid #E9ECEF;
-}
-
 .explore {
     max-width: 1200px;
     padding-top: 30px;
@@ -205,20 +201,23 @@ body {
 }
 
 .top-places__title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
+    font-style: italic;
 }
 
 .top-places__content {
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .content-text {
+    padding-bottom: 25px;
     text-align: center;
 }
 
@@ -228,6 +227,13 @@ body {
 
 .content__description {
     text-align: justify;
+}
+
+.content__btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #E9ECEF;
 }
 
 .carousel__img {
@@ -419,11 +425,11 @@ body {
     }
 
     .top-places__title {
-        margin-bottom: 100px;
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .top-places__content {
+        height: auto;
         flex-direction: row;
         justify-content: space-evenly;
     }
