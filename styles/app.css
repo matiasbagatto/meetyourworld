@@ -102,7 +102,7 @@ body {
 
 /* --- fin banner --- */
 
-/* --- inicio exploreSection --- */
+/* --- inicio main --- */
 
 .explore-container {
     border-bottom: 1px solid #E9ECEF;
@@ -139,22 +139,100 @@ body {
 }
 
 .explore__link {
+    text-decoration: none;
     transition: all 0.25s ease;
     color: black;
 }
 
 .explore__link:hover {
-    text-decoration: none;
     color: #6096BA;
 }
 
-/* --- fin exploreSection --- */
+/* --- inicio top-places --- */
 
-/* --- inicio mostPopularSection --- */
+.top-places {
+    padding: 20px;
+}
 
+.top-places__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
+.top-places__content {
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* --- fin mostPopularSection --- */
+.content-text {
+    text-align: center;
+}
+
+.content__title {
+    color: #6096BA;
+}
+
+.content__description {
+    text-align: justify;
+}
+
+.carousel__img {
+    border-radius: 3px;
+}
+
+/* --- fin top-places --- */
+
+/* --- fin main --- */
+
+/* --- inicio footer --- */
+
+.footer {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #E9ECEF;
+    grid-area: footer;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__link:hover {
+    color: #6096BA;
+    text-decoration: underline #6096BA;
+}
+
+.social {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social__link {
+    color: black;
+}
+
+.social__icon {
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.social__icon:hover {
+    transform: scale(1.2);
+    color: #6096BA;
+}
+
+/* --- fin footer --- */
 
 /* --- inicio media queries --- */
 
@@ -186,6 +264,28 @@ body {
         height: auto;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .top-places__title {
+        margin-bottom: 100px;
+        font-size: 2rem;
+    }
+
+    .top-places__content {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .content-text {
+        width: 40%;
+    }
+
+    .content-text--order {
+        order: 1;
+    }
+
+    .carousel--custom {
+        width: 40%;
     }
 }
 

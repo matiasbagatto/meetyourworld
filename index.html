@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,31 +16,33 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar--max-width">
-            <a class="navbar-brand" href="./index.html">
-                <img class="logo" src="./logo/logo.png" alt="logo de la pagina">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse collapse--custom" id="navbarNav">
-                <ul class="navbar-nav navbar-nav--custom">
-                    <li class="nav-item active active--custom">
-                        <a class="nav-link nav-link--custom" href="./index.html">Home <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link--custom" href="./pages/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link--custom" href="./pages/contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link--custom" href="./pages/donate.html"><button
-                                class="btn-donate">Donate</button></a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg bg-light navbar--max-width">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="logo" src="./logo/logo.png" alt="logo de la pagina">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse collapse--custom" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav--custom">
+                        <li class="nav-item active active--custom">
+                            <a class="nav-link nav-link--custom" href="./index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--custom" href="./pages/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--custom" href="./pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--custom" href="./pages/donate.html"><button
+                                    class="btn-donate">Donate</button></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -81,9 +82,198 @@
             </section>
         </div>
 
-        <section>
-            <h2>MOST POPULAR</h2>
-            <img src="#" alt="carousel de imagenes">
+        <section class="container-fluid top-places">
+            <h3 class="top-places__title">TOP PLACES TO VISIT</h3>
+
+            <div class="row">
+                <div class="col-12 top-places__content">
+                    <div class="content-text">
+                        <h4 class="content__title">Bali, Indonesia</h4>
+                        <p class="content__description">Bali, the famed Island of the Gods, with its varied landscape of
+                            hills and mountains, rugged
+                            coastlines and sandy beaches, lush rice terraces, and volcanic hillsides all providing a
+                            picturesque backdrop to its colorful, deeply spiritual, and unique culture stakes a serious
+                            claim to be paradise on earth.</p>
+                    </div>
+                    <div id="bali-indonesia" class="carousel slide carousel--custom" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/bali-indonesia/bali-indonesia-1.jpg"
+                                    class="d-block w-100 carousel__img" alt="Bali, Indonesia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/bali-indonesia/bali-indonesia-2.jpg"
+                                    class="d-block w-100 carousel__img" alt="Bali, Indonesia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/bali-indonesia/bali-indonesia-3.jpg"
+                                    class="d-block w-100 carousel__img" alt="Bali, Indonesia">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bali-indonesia"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bali-indonesia"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 top-places__content">
+                    <div class="content-text content-text--order">
+                        <h4 class="content__title">New Orleans, USA</h4>
+                        <p class="content__description">New Orleans is world-renowned for its distinctive music, Creole
+                            cuisine, unique dialects, and its annual celebrations and festivals, most notably Mardi
+                            Gras. The historic heart of the city is the French Quarter, known for its French and Spanish
+                            Creole architecture and vibrant nightlife along Bourbon Street.</p>
+                    </div>
+                    <div id="new-orleans" class="carousel slide carousel--custom" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/new-orleans/new-orleans-1.jpg" class="d-block w-100 carousel__img"
+                                    alt="New Orleans, USA">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/new-orleans/new-orleans-2.jpg" class="d-block w-100 carousel__img"
+                                    alt="New Orleans, USA">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/new-orleans/new-orleans-3.jpg" class="d-block w-100 carousel__img"
+                                    alt="New Orleans, USA">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#new-orleans"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#new-orleans"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 top-places__content">
+                    <div class="content-text">
+                        <h4 class="content__title">Sydney, Australia</h4>
+                        <p class="content__description">Sydney is Australia's oldest and largest city with a populatio
+                            of
+                            around 4 million. Sydney is built around a huge harbour and hosts many tourist attractions
+                            as well as a number of beaches, bays and a couple of national parks.</p>
+                    </div>
+                    <div id="sydney-australia" class="carousel slide carousel--custom" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/sydney-australia/sydney-1.jpg" class="d-block w-100 carousel__img"
+                                    alt="Sydney, Australia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/sydney-australia/sydney-2.jpg" class="d-block w-100 carousel__img"
+                                    alt="Sydney, Australia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/sydney-australia/sydney-3.jpg" class="d-block w-100 carousel__img"
+                                    alt="Sydney, Australia">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sydney-australia"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sydney-australia"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 top-places__content">
+                    <div class="content-text content-text--order">
+                        <h4 class="content__title">Bora Bora, French Polynesia</h4>
+                        <p class="content__description">This south pacific island could easily be defined as the center
+                            of the romantic universe, where luxury, beach resorts, and spas dot the island with
+                            overwater bungalows, thatched-roof villas, and a fabled ambiance. Simply put, Bora Bora is
+                            one of the most beautiful islands in the world.</p>
+                    </div>
+                    <div id="bora-bora" class="carousel slide carousel--custom" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/bora-bora/bora-bora-1.jpg" class="d-block w-100 carousel__img"
+                                    alt="Bora Bora, French Polynesia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/bora-bora/bora-bora-2.jpg" class="d-block w-100 carousel__img"
+                                    alt="Bora Bora, French Polynesia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/bora-bora/bora-bora-3.jpg" class="d-block w-100 carousel__img"
+                                    alt="Bora Bora, French Polynesia">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bora-bora"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bora-bora"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 top-places__content">
+                    <div class="content-text">
+                        <h4 class="content__title">Dubrovnik, Croatia</h4>
+                        <p class="content__description">Dubrovnik is situated on the southern Adriatic Sea coast, it is
+                            usually regarded as the most picturesque city on the Dalmatian coast and is referred to as
+                            the “Pearl of the Adriatic.”</p>
+                    </div>
+                    <div id="dubrovnik-croatia" class="carousel slide carousel--custom" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/dubrovnik-croatia/dubrovnik-croatia-1.jpg"
+                                    class="d-block w-100 carousel__img" alt="Bali, Indonesia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/dubrovnik-croatia/dubrovnik-croatia-2.jpg"
+                                    class="d-block w-100 carousel__img" alt="Bali, Indonesia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/dubrovnik-croatia/dubrovnik-croatia-3.jpg"
+                                    class="d-block w-100 carousel__img" alt="Bali, Indonesia">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dubrovnik-croatia"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dubrovnik-croatia"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -110,11 +300,11 @@
     <script src="https://kit.fontawesome.com/bfebc29d01.js" crossorigin="anonymous"></script>
 
     <!-- bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
 </body>
 
