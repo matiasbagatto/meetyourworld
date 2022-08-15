@@ -324,6 +324,68 @@ body {
 
 /* --- fin contact.html --- */
 
+/* --- inicio donate.html --- */
+
+.donate {
+    max-width: 768px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.donate__title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.amount-container {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.amount__currency {
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #E9ECEF;
+}
+
+.amount__input {
+    width: 50%;
+    padding: 8px 10px;
+    font-weight: 500;
+    border: 1px solid #E9ECEF;
+}
+
+.btn-send {
+    padding: 8px 10px;
+    transition: all 0.25s ease;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #E9ECEF;
+}
+
+.btn-send:hover {
+    transform: scale(1.05);
+    border-radius: 3px;
+    color: white;
+    background-color: #6096BA;
+}
+
+.donate__thanks {
+    text-align: center;
+    font-weight: 500;
+    color: #6096BA;
+}
+
+/* --- fin donate.html --- */
+
 /* --- inicio media queries --- */
 
 @media (max-width: 354px) {
