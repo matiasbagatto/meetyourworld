@@ -226,6 +226,7 @@ body {
 }
 
 .content__description {
+    margin-bottom: 25px;
     text-align: justify;
 }
 
@@ -316,16 +317,8 @@ body {
     max-height: 400px;
 }
 
-.btn-submit {
-    transition: all 0.25s ease;
-    color: white;
-    background-color: #6096BA;
-}
-
 .btn-submit:hover {
-    transform: scale(1.05);
-    color: white;
-    background-color: #6096BA;
+    transform: none;
 }
 
 /* --- fin contact.html --- */
@@ -333,11 +326,14 @@ body {
 /* --- inicio donate.html --- */
 
 .donate {
+    height: 75vh;
     max-width: 768px;
     padding: 20px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .donate__title {
