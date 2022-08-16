@@ -226,7 +226,7 @@ body {
 }
 
 .content__description {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     text-align: justify;
 }
 
@@ -400,6 +400,11 @@ body {
 .continent-title-span {
     font-weight: bold;
     color: #6096BA;
+}
+
+.continent__description {
+    text-align: justify;
+    margin-bottom: 0;
 }
 
 /* --- fin continents.html --- */
