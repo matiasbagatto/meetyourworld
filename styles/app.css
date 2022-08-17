@@ -297,6 +297,7 @@ body {
 
 .form-container {
     padding: 20px 0;
+    border-bottom: 1px solid #E9ECEF;
 }
 
 .form-title {
@@ -342,14 +343,15 @@ body {
 /* --- inicio donate.html --- */
 
 .donate {
+    width: 100%;
     height: 75vh;
-    max-width: 768px;
     padding: 20px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #E9ECEF;
 }
 
 .donate__title {
