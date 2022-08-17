@@ -44,13 +44,13 @@ body {
     font-size: inherit;
     border: none;
     border-radius: 5px;
-    color: #343A40;
+    color: #343A40 !important;
     background-color: #E9ECEF;
 }
 
 .btn--custom:hover {
     transform: scale(1.05);
-    color: white;
+    color: white !important;
     background-color: #6096BA;
 }
 
@@ -297,15 +297,17 @@ body {
 
 /* --- inicio contact.html --- */
 
+.form-container {
+    padding: 20px 0;
+}
+
 .form-title {
-    padding: 20px;
     text-align: center;
 }
 
 .contact-form {
     max-width: 768px;
-    height: 80vh;
-    padding-bottom: 20px;
+    height: 100vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -317,8 +319,18 @@ body {
     max-height: 400px;
 }
 
-.btn-submit:hover {
-    transform: none;
+.form-btn {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    color: white !important;
+    background-color: #6096BA;
 }
 
 /* --- fin contact.html --- */
@@ -365,19 +377,13 @@ body {
 }
 
 .btn-send {
-    padding: 8px 10px;
-    transition: all 0.25s ease;
-    border: none;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-color: #E9ECEF;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .btn-send:hover {
-    transform: scale(1.05);
-    border-radius: 3px;
-    color: white;
-    background-color: #6096BA;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .donate__thanks {

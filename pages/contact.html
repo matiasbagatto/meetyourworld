@@ -48,31 +48,37 @@
     </header>
 
     <main>
-        <h1 class="form-title">Fill out the form and help us improve this website!</h1>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="email" class="form-control" id="firstName" aria-describedby="firstName">
+        <section class="form-container">
+            <h1 class="form-title">Fill out the form and help us improve this website!</h1>
+            <div class="container-fluid">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="email" class="form-control" id="firstName" aria-describedby="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="email" class="form-control" id="lastName" aria-describedby="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress">Email address</label>
+                        <input type="email" class="form-control" id="emailAddress" aria-describedby="emailAddress">
+                    </div>
+                    <div class="form-group">
+                        <label for="anySuggestions">Any suggestions?</label>
+                        <textarea class="form-control textarea-max-height" id="anySuggestions"
+                            placeholder="I think you can improve your website by..." rows="16"></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter" checked>
+                        <label class="form-check-label" for="newsletter">Subscribe to newsletter</label>
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit" class="btn--custom btn-submit">Submit</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="email" class="form-control" id="lastName" aria-describedby="lastName">
-            </div>
-            <div class="form-group">
-                <label for="emailAddress">Email address</label>
-                <input type="email" class="form-control" id="emailAddress" aria-describedby="emailAddress">
-            </div>
-            <div class="form-group">
-                <label for="anySuggestions">Any suggestions?</label>
-                <textarea class="form-control textarea-max-height" id="anySuggestions"
-                    placeholder="I think you can improve your website by..." rows="16"></textarea>
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="newsletter" checked>
-                <label class="form-check-label" for="newsletter">Subscribe to newsletter</label>
-            </div>
-            <button type="submit" class="btn--custom btn-submit">Submit</button>
-        </form>
+        </section>
     </main>
 
     <footer>
