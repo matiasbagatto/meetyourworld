@@ -177,7 +177,6 @@ body {
 
 .content-text {
     padding-bottom: 25px;
-    transition: all 0.5s ease;
     text-align: center;
 }
 
@@ -268,7 +267,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
-    text-decoration: 5px underline #6096BA;
+    text-decoration: 5px underline;
 }
 
 .explore__list {
@@ -465,10 +464,6 @@ body {
 
     .content-text {
         width: 40%;
-    }
-
-    .content-text:hover {
-        transform: scale(1.1);
     }
 
     .content-text--order {
