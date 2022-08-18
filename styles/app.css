@@ -57,7 +57,7 @@ body {
 }
 
 .active-donate {
-    color: white;
+    color: white !important;
     background-color: #6096BA;
 }
 
@@ -164,7 +164,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     font-style: italic;
-    text-decoration: 8px underline;
+    text-decoration: 6px underline;
 }
 
 .top-places__content {
@@ -181,6 +181,8 @@ body {
 }
 
 .content__title {
+    font-size: 2rem;
+    font-weight: 600;
     color: #6096BA;
 }
 
@@ -453,7 +455,7 @@ body {
     }
 
     .top-places__title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .top-places__content {
