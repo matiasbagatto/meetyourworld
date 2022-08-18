@@ -14,16 +14,6 @@ body {
     margin: auto;
 }
 
-.collapse--custom {
-    justify-content: flex-end;
-}
-
-.navbar-nav--custom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .active--custom .nav-link--custom {
     color: #6096BA !important;
 }
@@ -439,7 +429,6 @@ body {
     .navbar-nav--custom {
         width: 40vw;
         max-width: 460px;
-        justify-content: space-between;
     }
 
     .explore {
