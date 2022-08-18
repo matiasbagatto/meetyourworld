@@ -134,7 +134,7 @@ body {
 }
 
 .banner__title-span {
-    border-bottom: 2px solid #6096BA;
+    border-bottom: 2px solid #2B9348;
 }
 
 .search-box {
@@ -164,7 +164,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     font-style: italic;
-    text-decoration: 6px underline;
+    text-decoration: 6px underline #2B9348;
 }
 
 .top-places__content {
@@ -182,7 +182,6 @@ body {
 
 .content__title {
     font-size: 2rem;
-    font-weight: 600;
     color: #6096BA;
 }
 
@@ -269,7 +268,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
-    text-decoration: 5px underline;
+    text-decoration: 6px underline #2B9348;
 }
 
 .explore__list {
@@ -336,7 +335,11 @@ body {
     width: 100%;
     padding: 10px;
     color: white !important;
-    background-color: #6096BA;
+    background-color: #2B9348;
+}
+
+.btn-submit:hover {
+    background-color: #2B9348;
 }
 
 /* --- fin contact.html --- */
@@ -391,6 +394,8 @@ body {
 .btn-send:hover {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    background-color: #2B9348;
+    color: white !important;
 }
 
 .donate__thanks {
