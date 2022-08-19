@@ -1,0 +1,108 @@
+.banner {
+    background: url("../../images/banner.png");
+    border-bottom: 1px solid $secondary-color;
+}
+
+.banner-content {
+    height: 25vh;
+    max-width: 768px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .banner-content__title {
+        font-size: 2rem;
+        font-weight: 300;
+        align-self: flex-start;
+    }
+
+    .banner-content__span {
+        border-bottom: 2px solid $third-color;
+    }
+
+    .banner-content__searchbox {
+        width: 80%;
+        padding: 20px;
+        border: 1px solid $link-color;
+        border-radius: 50px;
+        background: url("../icons/magnifying-glass-solid.svg") no-repeat 18px 18px;
+        background-size: 20px;
+        background-position: 92%;
+    }
+}
+
+.explore {
+    padding: 20px 0;
+
+    .explore__title {
+        padding-bottom: 50px;
+        font-size: 2.2rem;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        text-decoration: 6px underline $third-color;
+    }
+}
+
+.explore-content {
+    margin-bottom: 50px;
+}
+
+.explore-content:last-child {
+    margin-bottom: 0;
+}
+
+.content-text {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .content-text__title {
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $third-color;
+    }
+
+    .content-text__info {
+        padding-bottom: 20px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+}
+
+.explore-carousel {
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .banner-content {
+        margin: auto;
+    }
+
+    .banner__title {
+        font-size: 2.3rem;
+    }
+
+    .explore__title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .explore {
+        padding: 20px 30px;
+    }
+
+    .explore-content {
+        margin-bottom: 75px;
+    }
+
+    .priority-order {
+        order: 1;
+    }
+}

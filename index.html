@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <title>MYW - Home</title>
+    <title>Home | Meet Your World</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-light navbar--max-width">
-            <div class="container-fluid">
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-xl">
                 <a class="navbar-brand" href="./index.html">
                     <img class="logo" src="./logo/logo.png" alt="logo de la pagina">
                 </a>
@@ -26,20 +26,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center justify-content-lg-between navbar-nav--custom">
-                        <li class="nav-item active active--custom">
-                            <a class="nav-link nav-link--custom" href="./index.html">Home <span
+                    <ul class="navbar-nav align-items-center nav__list">
+                        <li class="nav-item active">
+                            <a class="nav-link nav__link" href="./index.html">Home <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom" href="./pages/about.html" target="_blank">About</a>
+                            <a class="nav-link nav__link" href="./pages/about.html" target="_blank">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom" href="./pages/contact.html" target="_blank">Contact</a>
+                            <a class="nav-link nav__link" href="./pages/contact.html" target="_blank">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom btn--custom" href="./pages/donate.html"
-                                target="_blank">Donate</a>
+                            <a class="nav-link btn-custom" href="./pages/donate.html" target="_blank">Donate</a>
                         </li>
                     </ul>
                 </div>
@@ -47,321 +46,318 @@
         </nav>
     </header>
 
-    <div class="banner-hero">
-        <div class="container-fluid justify-content-between banner">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="banner__title">Find awesome places <br><span class="banner__title-span">all over</span>
-                        the
-                        world
-                    </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <form action="#">
-                        <input class="search-box" type="text">
-                    </form>
-                </div>
-            </div>
+    <div class="container-fluid banner">
+        <div class="banner-content">
+            <h1 class="banner-content__title">Find awesome places <br><span class="banner-content__span">all over</span>
+                the
+                world
+            </h1>
+            <input class="banner-content__searchbox" type="text">
         </div>
     </div>
 
-    <main>
-        <section class="container-fluid top-places border-bottom-none">
-            <h3 class="top-places__title">EXPLORE</h3>
-
-            <div class="row">
-                <div class="col-12 top-places__content">
-                    <div class="content-text">
-                        <h4 class="content__title">Asia</h4>
-                        <p class="content__description">Asia is the largest of the world's continents, covering
-                            approximately 30 percent of the Earth's land area. It is also the world's most populous
-                            continent, with roughly 60 percent of the total population.</p>
-                        <a class="btn--custom btn-browse" href="./pages/asia.html">Browse this continent</a>
+    <main class="container-fluid">
+        <section class="explore">
+            <h2 class="explore__title">EXPLORE</h2>
+            <div class="container-fluid">
+                <div class="row explore-content">
+                    <div class="col-lg-6 content-text">
+                        <h3 class="content-text__title">Asia</h3>
+                        <p class="content-text__info">
+                            Asia is the largest of the world's continents, covering approximately 30 percent of the
+                            Earth's land area. It is also the world's most populous
+                            continent, with roughly 60 percent of the total population.
+                        </p>
+                        <a class="btn-custom" href="./pages/asia.html">Browse this continent</a>
                     </div>
-                    <div id="asia" class="carousel slide carousel--custom" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./images/asia/asia (1).jpg" class="d-block w-100 carousel__img" alt="Asia">
+                    <div class="col-lg-6">
+                        <div id="asia" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner explore-carousel">
+                                <div class="carousel-item active">
+                                    <img src="./images/asia/asia (1).jpg" class="d-block w-100" alt="Asia">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/asia/asia (2).jpg" class="d-block w-100" alt="Asia">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/asia/asia (3).jpg" class="d-block w-100" alt="Asia">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/asia/asia (4).jpg" class="d-block w-100" alt="Asia">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/asia/asia (5).jpg" class="d-block w-100" alt="Asia">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="./images/asia/asia (2).jpg" class="d-block w-100 carousel__img" alt="Asia">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/asia/asia (3).jpg" class="d-block w-100 carousel__img" alt="Asia">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/asia/asia (4).jpg" class="d-block w-100 carousel__img" alt="Asia">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/asia/asia (5).jpg" class="d-block w-100 carousel__img" alt="Asia">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#asia"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#asia"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#asia" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#asia" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12 top-places__content">
-                    <div class="content-text content-text--order">
-                        <h4 class="content__title">Africa</h4>
-                        <p class="content__description">Africa, the second-largest continent, is bounded by the
-                            Mediterranean Sea, the Red Sea, the Indian Ocean, and the Atlantic Ocean. It is divided in
-                            half almost equally by the Equator. Africa's physical geography, environment and resources,
-                            and human geography can be considered separately.</p>
-                        <a class="btn--custom btn-browse" href="./pages/africa.html">Browse this continent</a>
+                <div class="row explore-content">
+                    <div class="col-lg-6 content-text priority-order">
+                        <h3 class="content-text__title">Africa</h3>
+                        <p class="content-text__info">
+                            Africa, the second-largest continent, is bounded by the Mediterranean Sea, the Red Sea, the
+                            Indian Ocean, and the Atlantic Ocean. It is divided
+                            in
+                            half almost equally by the Equator. Africa's physical geography, environment and
+                            resources,
+                            and human geography can be considered separately.
+                        </p>
+                        <a class="btn-custom" href="./pages/africa.html">Browse this continent</a>
                     </div>
-                    <div id="africa" class="carousel slide carousel--custom" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./images/africa/africa (1).jpg" class="d-block w-100 carousel__img"
-                                    alt="Africa">
+                    <div class="col-lg-6">
+                        <div id="africa" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner explore-carousel">
+                                <div class="carousel-item active">
+                                    <img src="./images/africa/africa (1).jpg" class="d-block w-100" alt="Africa">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/africa/africa (2).jpg" class="d-block w-100" alt="Africa">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/africa/africa (3).jpg" class="d-block w-100" alt="Africa">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/africa/africa (4).jpg" class="d-block w-100" alt="Africa">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/africa/africa (5).jpg" class="d-block w-100" alt="Africa">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="./images/africa/africa (2).jpg" class="d-block w-100 carousel__img"
-                                    alt="Africa">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/africa/africa (3).jpg" class="d-block w-100 carousel__img"
-                                    alt="Africa">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/africa/africa (4).jpg" class="d-block w-100 carousel__img"
-                                    alt="Africa">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/africa/africa (5).jpg" class="d-block w-100 carousel__img"
-                                    alt="Africa">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#africa"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#africa"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#africa"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#africa"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12 top-places__content">
-                    <div class="content-text">
-                        <h4 class="content__title">Europe</h4>
-                        <p class="content__description">Europe is often described as a “peninsula of peninsulas.” A
-                            peninsula is a piece of land surrounded by water on three sides. Europe is a peninsula of
-                            the Eurasian supercontinent and is bordered by the Arctic Ocean to the north, the Atlantic
-                            Ocean to the west, and the Mediterranean, Black, and Caspian seas to the south.</p>
-                        <a class="btn--custom btn-browse" href="./pages/europe.html">Browse this continent</a>
+                <div class="row explore-content">
+                    <div class="col-lg-6 content-text">
+                        <h3 class="content-text__title">Europe</h3>
+                        <p class="content-text__info">
+                            Europe is often described as a "peninsula of peninsulas". A
+                            peninsula is a piece of land surrounded by water on three sides. Europe is a
+                            peninsula
+                            of
+                            the Eurasian supercontinent and is bordered by the Arctic Ocean to the north,
+                            the
+                            Atlantic
+                            Ocean to the west, and the Mediterranean, Black, and Caspian seas to the south.
+                        </p>
+                        <a class="btn-custom" href="./pages/europe.html">Browse this continent</a>
                     </div>
-                    <div id="europe" class="carousel slide carousel--custom" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./images/europe/europe (1).jpg" class="d-block w-100 carousel__img"
-                                    alt="Europe">
+                    <div class="col-lg-6">
+                        <div id="europe" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner explore-carousel">
+                                <div class="carousel-item active">
+                                    <img src="./images/europe/europe (1).jpg" class="d-block w-100" alt="Europe">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/europe/europe (2).jpg" class="d-block w-100" alt="Europe">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/europe/europe (3).jpg" class="d-block w-100" alt="Europe">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/europe/europe (4).jpg" class="d-block w-100" alt="Europe">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/europe/europe (5).jpg" class="d-block w-100" alt="Europe">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="./images/europe/europe (2).jpg" class="d-block w-100 carousel__img"
-                                    alt="Europe">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/europe/europe (3).jpg" class="d-block w-100 carousel__img"
-                                    alt="Europe">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/europe/europe (4).jpg" class="d-block w-100 carousel__img"
-                                    alt="Europe">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/europe/europe (5).jpg" class="d-block w-100 carousel__img"
-                                    alt="Europe">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#europe"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#europe"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#europe"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#europe"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12 top-places__content">
-                    <div class="content-text content-text--order">
-                        <h4 class="content__title">Oceania</h4>
-                        <p class="content__description">Oceania is a region made up of thousands of islands throughout
-                            the Central and South Pacific Ocean. It includes Australia, the smallest continent in terms
-                            of total land area.</p>
-                        <a class="btn--custom btn-browse" href="./pages/oceania.html">Browse this continent</a>
+                <div class="row explore-content">
+                    <div class="col-lg-6 content-text priority-order">
+                        <h4 class="content-text__title">Oceania</h4>
+                        <p class="content-text__info">
+                            Oceania is a region made up of thousands of islands throughout the Central and South Pacific
+                            Ocean. It includes Australia, the smallest continent
+                            in
+                            terms
+                            of total land area.
+                        </p>
+                        <a class="btn-custom" href="./pages/oceania.html">Browse this continent</a>
                     </div>
-                    <div id="oceania" class="carousel slide carousel--custom" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./images/oceania/oceania (1).jpg" class="d-block w-100 carousel__img"
-                                    alt="Oceania">
+                    <div class="col-lg-6">
+                        <div id="oceania" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner explore-carousel">
+                                <div class="carousel-item active">
+                                    <img src="./images/oceania/oceania (1).jpg" class="d-block w-100" alt="Oceania">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/oceania/oceania (2).jpg" class="d-block w-100" alt="Oceania">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/oceania/oceania (3).jpg" class="d-block w-100" alt="Oceania">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/oceania/oceania (4).jpg" class="d-block w-100" alt="Oceania">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/oceania/oceania (5).jpg" class="d-block w-100" alt="Oceania">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="./images/oceania/oceania (2).jpg" class="d-block w-100 carousel__img"
-                                    alt="Oceania">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/oceania/oceania (3).jpg" class="d-block w-100 carousel__img"
-                                    alt="Oceania">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/oceania/oceania (4).jpg" class="d-block w-100 carousel__img"
-                                    alt="Oceania">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/oceania/oceania (5).jpg" class="d-block w-100 carousel__img"
-                                    alt="Oceania">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#oceania"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#oceania"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#oceania"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#oceania"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12 top-places__content">
-                    <div class="content-text">
-                        <h4 class="content__title">North America</h4>
-                        <p class="content__description">North America, the third-largest continent, extends from the
-                            tiny Aleutian Islands in the northwest to the Isthmus of Panama in the south. The continent
-                            includes the enormous island of Greenland in the northeast and the small island countries
-                            and territories that dot the Caribbean Sea and western North Atlantic Ocean..</p>
-                        <a class="btn--custom btn-browse" href="./pages/north-america.html">Browse this continent</a>
+                <div class="row explore-content">
+                    <div class="col-lg-6 content-text">
+                        <h4 class="content-text__title">North America</h4>
+                        <p class="content-text__info">
+                            North America, the third-largest continent, extends from the
+                            tiny Aleutian Islands in the northwest to the Isthmus of Panama in the south. The
+                            continent
+                            includes the enormous island of Greenland in the northeast and the small island
+                            countries
+                            and territories that dot the Caribbean Sea and western North Atlantic Ocean.
+                        </p>
+                        <a class="btn-custom" href="./pages/north-america.html">Browse this continent</a>
                     </div>
-                    <div id="north-america" class="carousel slide carousel--custom" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./images/north-america/north-america (1).jpg"
-                                    class="d-block w-100 carousel__img" alt="North America">
+                    <div class="col-lg-6">
+                        <div id="north-america" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner explore-carousel">
+                                <div class="carousel-item active">
+                                    <img src="./images/north-america/north-america (1).jpg" class="d-block w-100"
+                                        alt="North America">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/north-america/north-america (2).jpg" class="d-block w-100"
+                                        alt="North America">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/north-america/north-america (3).jpg" class="d-block w-100"
+                                        alt="North America">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/north-america/north-america (4).jpg" class="d-block w-100"
+                                        alt="North America">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/north-america/north-america (5).jpg" class="d-block w-100"
+                                        alt="North America">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="./images/north-america/north-america (2).jpg"
-                                    class="d-block w-100 carousel__img" alt="North America">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/north-america/north-america (3).jpg"
-                                    class="d-block w-100 carousel__img" alt="North America">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/north-america/north-america (4).jpg"
-                                    class="d-block w-100 carousel__img" alt="North America">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/north-america/north-america (5).jpg"
-                                    class="d-block w-100 carousel__img" alt="North America">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#north-america"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#north-america"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#north-america"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#north-america"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12 top-places__content">
-                    <div class="content-text content-text--order">
-                        <h4 class="content__title">South America</h4>
-                        <p class="content__description">South America is a continent of extremes. It is home to the
-                            world's largest river as well as the world's driest place.
+                <div class="row explore-content">
+                    <div class="col-lg-6 content-text priority-order">
+                        <h4 class="content-text__title">South America</h4>
+                        <p class="content-text__info">
+                            South America is a continent of extremes. It is home to the world's largest river as well as
+                            the world's driest place.
                             South America, the fourth-largest continent, extends from the Gulf of Darién in the
-                            northwest to the archipelago of Tierra del Fuego in the south.</p>
-                        <a class="btn--custom btn-browse" href="./pages/south-america.html">Browse this continent</a>
+                            northwest to the archipelago of Tierra del Fuego in the south.
+                        </p>
+                        <a class="btn-custom" href="./pages/south-america.html">Browse this continent</a>
                     </div>
-                    <div id="south-america" class="carousel slide carousel--custom" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./images/south-america/south-america (1).jpg"
-                                    class="d-block w-100 carousel__img" alt="South America">
+                    <div class="col-lg-6">
+                        <div id="south-america" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner explore-carousel">
+                                <div class="carousel-item active">
+                                    <img src="./images/south-america/south-america (1).jpg" class="d-block w-100"
+                                        alt="South America">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/south-america/south-america (2).jpg" class="d-block w-100"
+                                        alt="South America">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/south-america/south-america (3).jpg" class="d-block w-100"
+                                        alt="South America">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/south-america/south-america (4).jpg" class="d-block w-100"
+                                        alt="South America">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/south-america/south-america (5).jpg" class="d-block w-100"
+                                        alt="South America">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="./images/south-america/south-america (2).jpg"
-                                    class="d-block w-100 carousel__img" alt="South America">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/south-america/south-america (3).jpg"
-                                    class="d-block w-100 carousel__img" alt="South America">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/south-america/south-america (4).jpg"
-                                    class="d-block w-100 carousel__img" alt="South America">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/south-america/south-america (5).jpg"
-                                    class="d-block w-100 carousel__img" alt="South America">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#south-america"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#south-america"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#south-america"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#south-america"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
 
-    <footer>
-        <div class="footer">
-            <p class="footer__text">
-                <a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022
-            </p>
-            <div class="social">
-                <a class="social__link" href="https://twitter.com/bagattomatias" target="_blank">
-                    <i class="fa-brands fa-twitter fa-2x social__icon"></i>
-                </a>
-                <a class="social__link" href="https://github.com/matiasbagatto" target="_blank">
-                    <i class="fa-brands fa-github fa-2x social__icon"></i>
-                </a>
-                <a class="social__link" href="https://www.linkedin.com/in/matiasbagatto" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-2x social__icon"></i>
-                </a>
-            </div>
+    <footer class="container-fluid footer">
+        <p class="footer__text"><a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022</p>
+        <div class="footer-social">
+            <a class="footer-social__link" href="https://twitter.com/bagattomatias" target="_blank">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+            <a class="footer-social__link" href="https://github.com/matiasbagatto" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a class="footer-social__link" href="https://www.linkedin.com/in/matiasbagatto" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
         </div>
     </footer>
 

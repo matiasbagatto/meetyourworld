@@ -1,0 +1,21 @@
+.logo {
+    width: 200px;
+}
+
+.nav__link {
+    color: $link-color;
+    transition: all 0.25s ease;
+
+    &:hover {
+        color: $third-color;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav__list {
+        width: 40vw;
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
