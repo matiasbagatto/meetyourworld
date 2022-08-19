@@ -1,0 +1,45 @@
+.about {
+    padding: 20px 0;
+    border-bottom: 1px solid $secondary-color;
+}
+
+.about-content {
+    padding: 0 25px;
+    margin-bottom: 25px;
+}
+
+.about-content:last-of-type {
+    margin-bottom: 0;
+}
+
+#about-title {
+    font-size: 1.2rem;
+}
+
+.about-illustration {
+    width: 400px;
+    height: 400px;
+    display: none;
+}
+
+.content-text__link {
+    text-decoration: none;
+    font-weight: bold;
+    color: $link-color;
+
+    &:hover {
+        text-decoration: underline;
+        color: $third-color;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-content {
+        margin-bottom: 75px;
+    }
+
+    .about-illustration {
+        margin: 0 auto;
+        display: flex;
+    }
+}

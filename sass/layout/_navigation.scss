@@ -11,6 +11,10 @@
     }
 }
 
+.active-link {
+    color: $third-color;
+}
+
 @media (min-width: 992px) {
     .nav__list {
         width: 40vw;
