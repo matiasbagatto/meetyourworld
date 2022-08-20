@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-light navbar--max-width">
-            <div class="container-fluid">
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-xl">
                 <a class="navbar-brand" href="../index.html">
                     <img class="logo" src="../logo/logo.png" alt="logo de la pagina">
                 </a>
@@ -26,19 +26,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center justify-content-lg-between navbar-nav--custom">
+                    <ul class="navbar-nav align-items-center nav__list">
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom" href="../index.html">Home</a>
+                            <a class="nav-link nav__link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom" href="./about.html">About</a>
+                            <a class="nav-link nav__link" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom" href="./contact.html">Contact</a>
+                            <a class="nav-link nav__link" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom btn--custom active-donate" href="./donate.html">Donate
-                                <span class="sr-only">(current)</span></a>
+                            <a class="nav-link btn-custom" href="./donate.html">Donate</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +46,27 @@
     </header>
 
     <main>
-        <section class="donate">
+        <section class="container-fluid donate">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="donate__title">Enter amount</h1>
+                </div>
+                <div class="col-12 donate-content">
+                    <select class="donate-content__currency" name="currency" id="currency">
+                        <option value="ars">ARS</option>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                    <input class="donate-content__input" type="text" placeholder="$">
+                    <button class="btn-custom btn-send">Send</button>
+                </div>
+                <div class="col-12">
+                    <p class="donate__thanks">Thanks for donating!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="donate">
             <h1 class="donate__title">Enter amount</h1>
             <div class="amount-container">
                 <select class="amount__currency" name="currency" id="currency">
@@ -61,37 +80,33 @@
             <p class="donate__thanks">
                 Thank you for donating!
             </p>
-        </section>
+        </section> -->
 
-        <section class="container-fluid explore">
-            <h2 class="explore__title">EXPLORE</h2>
-            <ul class="explore__list">
-                <li><a class="explore__link" href="./asia.html">Asia</a></li>
-                <li><a class="explore__link" href="./europe.html">Europe</a></li>
-                <li><a class="explore__link" href="./africa.html">Africa</a></li>
-                <li><a class="explore__link" href="./oceania.html">Oceania</a></li>
-                <li><a class="explore__link" href="./north-america.html">North America</a></li>
-                <li><a class="explore__link" href="./south-america.html">South America</a></li>
+        <section class="container-lg explore-basic">
+            <h2 class="explore-basic__title">EXPLORE</h2>
+            <ul class="explore-basic__list">
+                <li><a class="explore-basic__link" href="./asia.html">Asia</a></li>
+                <li><a class="explore-basic__link" href="./africa.html">Africa</a></li>
+                <li><a class="explore-basic__link" href="./europe.html">Europe</a></li>
+                <li><a class="explore-basic__link" href="./oceania.html">Oceania</a></li>
+                <li><a class="explore-basic__link" href="./north-america.html">North America</a></li>
+                <li><a class="explore-basic__link" href="./south-america.html">South America</a></li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <div class="footer">
-            <p class="footer__text">
-                <a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022
-            </p>
-            <div class="social">
-                <a class="social__link" href="https://twitter.com/bagattomatias" target="_blank">
-                    <i class="fa-brands fa-twitter fa-2x social__icon"></i>
-                </a>
-                <a class="social__link" href="https://github.com/matiasbagatto" target="_blank">
-                    <i class="fa-brands fa-github fa-2x social__icon"></i>
-                </a>
-                <a class="social__link" href="https://www.linkedin.com/in/matiasbagatto" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-2x social__icon"></i>
-                </a>
-            </div>
+    <footer class="container-fluid footer">
+        <p class="footer__text"><a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022</p>
+        <div class="footer-social">
+            <a class="footer-social__link" href="https://twitter.com/bagattomatias" target="_blank">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+            <a class="footer-social__link" href="https://github.com/matiasbagatto" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a class="footer-social__link" href="https://www.linkedin.com/in/matiasbagatto" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
         </div>
     </footer>
 

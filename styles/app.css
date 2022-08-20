@@ -165,6 +165,14 @@ body {
   transform: scale(1.03);
 }
 
+.btn-send {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-send:hover {
+  border-radius: 5px;
+}
+
 .explore-basic {
   max-width: 1200px;
   padding: 20px 0;
@@ -433,6 +441,38 @@ body {
 .submit {
   display: flex;
   justify-content: center;
+}
+
+.donate {
+  padding: 20px 0;
+  border-bottom: 1px solid #E9ECEF;
+}
+.donate__title {
+  padding-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.donate__thanks {
+  font-weight: 600;
+  color: #6096BA;
+}
+
+.donate-content {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.donate-content__currency {
+  padding: 6px;
+  border: 1px solid #E9ECEF;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.donate-content__input {
+  padding: 0 10px;
+  font-weight: 500;
+  border: 1px solid #E9ECEF;
+  border-left: none;
 }
 
 /*# sourceMappingURL=app.css.map */

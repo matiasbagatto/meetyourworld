@@ -1,0 +1,35 @@
+.donate {
+    padding: 20px 0;
+    border-bottom: $border-bottom;
+
+    &__title {
+        padding-bottom: 10px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    &__thanks {
+        font-weight: 600;
+        color: $third-color;
+    }
+}
+
+.donate-content {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    &__currency {
+        padding: 6px;
+        border: $border-bottom;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    &__input {
+        padding: 0 10px;
+        font-weight: 500;
+        border: $border-bottom;
+        border-left: none;
+    }
+}

@@ -23,3 +23,12 @@
         transform: scale(1.03);
     }
 }
+
+.btn-send {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    &:hover {
+        border-radius: 5px;
+    }
+}
