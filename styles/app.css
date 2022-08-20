@@ -218,34 +218,6 @@ body {
     flex-direction: row;
   }
 }
-.header {
-  border-bottom: 1px solid #E9ECEF;
-}
-
-.logo {
-  width: 200px;
-}
-
-.nav__link {
-  color: #343A40;
-  transition: all 0.25s ease;
-}
-.nav__link:hover {
-  color: #6096BA;
-}
-
-.active-link {
-  color: #6096BA;
-}
-
-@media (min-width: 992px) {
-  .nav__list {
-    width: 40vw;
-    max-width: 400px;
-    display: flex;
-    justify-content: space-between;
-  }
-}
 .footer {
   padding: 20px;
   text-align: center;
@@ -278,6 +250,128 @@ body {
   transform: scale(1.2);
 }
 
+.header {
+  border-bottom: 1px solid #E9ECEF;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav__link {
+  color: #343A40;
+  transition: all 0.25s ease;
+}
+.nav__link:hover {
+  color: #6096BA;
+}
+
+.active-link {
+  color: #6096BA;
+}
+
+@media (min-width: 992px) {
+  .nav__list {
+    width: 40vw;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.about {
+  padding: 20px 0;
+  border-bottom: 1px solid #E9ECEF;
+}
+
+.about-content {
+  padding: 0 25px;
+  margin-bottom: 25px;
+}
+
+.about-content:last-of-type {
+  margin-bottom: 0;
+}
+
+#about-title {
+  font-size: 1.2rem;
+}
+
+.about-illustration {
+  width: 400px;
+  height: 400px;
+  display: none;
+}
+
+.content-text__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #343A40;
+}
+.content-text__link:hover {
+  text-decoration: underline;
+  color: #6096BA;
+}
+
+@media (min-width: 992px) {
+  .about-content {
+    margin-bottom: 75px;
+  }
+  #about-title {
+    font-size: 1.6rem;
+  }
+  .about-illustration {
+    margin: 0 auto;
+    display: flex;
+  }
+}
+.contact {
+  padding: 0 20px;
+  border-bottom: 1px solid #E9ECEF;
+}
+
+.contact-form {
+  max-width: 768px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.donate {
+  padding: 20px 0;
+  border-bottom: 1px solid #E9ECEF;
+}
+.donate__title {
+  padding-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.donate__thanks {
+  font-weight: 600;
+  color: #6096BA;
+}
+
+.donate-content {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.donate-content__currency {
+  padding: 6px;
+  border: 1px solid #E9ECEF;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.donate-content__input {
+  padding: 0 10px;
+  font-weight: 500;
+  border: 1px solid #E9ECEF;
+  border-left: none;
+}
+
 .banner {
   background: url("../../images/banner.png");
   border-bottom: 1px solid #E9ECEF;
@@ -308,6 +402,10 @@ body {
   background: url("../icons/magnifying-glass-solid.svg") no-repeat 18px 18px;
   background-size: 20px;
   background-position: 92%;
+}
+
+.continent {
+  border-bottom: 1px solid #E9ECEF;
 }
 
 .explore {
@@ -381,102 +479,6 @@ body {
   .priority-order {
     order: 1;
   }
-}
-.about {
-  padding: 20px 0;
-  border-bottom: 1px solid #E9ECEF;
-}
-
-.about-content {
-  padding: 0 25px;
-  margin-bottom: 25px;
-}
-
-.about-content:last-of-type {
-  margin-bottom: 0;
-}
-
-#about-title {
-  font-size: 1.2rem;
-}
-
-.about-illustration {
-  width: 400px;
-  height: 400px;
-  display: none;
-}
-
-.content-text__link {
-  text-decoration: none;
-  font-weight: bold;
-  color: #343A40;
-}
-.content-text__link:hover {
-  text-decoration: underline;
-  color: #6096BA;
-}
-
-@media (min-width: 992px) {
-  .about-content {
-    margin-bottom: 75px;
-  }
-  #about-title {
-    font-size: 1.6rem;
-  }
-  .about-illustration {
-    margin: 0 auto;
-    display: flex;
-  }
-}
-.contact {
-  border-bottom: 1px solid #E9ECEF;
-}
-
-.contact-form {
-  max-width: 768px;
-  padding: 20px 0;
-  margin: 0 auto;
-}
-
-.submit {
-  display: flex;
-  justify-content: center;
-}
-
-.donate {
-  padding: 20px 0;
-  border-bottom: 1px solid #E9ECEF;
-}
-.donate__title {
-  padding-bottom: 10px;
-  font-size: 2rem;
-  font-weight: 600;
-}
-.donate__thanks {
-  font-weight: 600;
-  color: #6096BA;
-}
-
-.donate-content {
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: center;
-}
-.donate-content__currency {
-  padding: 6px;
-  border: 1px solid #E9ECEF;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-.donate-content__input {
-  padding: 0 10px;
-  font-weight: 500;
-  border: 1px solid #E9ECEF;
-  border-left: none;
-}
-
-.continent {
-  border-bottom: 1px solid #E9ECEF;
 }
 
 /*# sourceMappingURL=app.css.map */
