@@ -19,6 +19,11 @@
     color: $third-color;
 }
 
+.donate-active {
+    color: #fff;
+    background-color: $third-color;
+}
+
 @media (min-width: 992px) {
     .nav__list {
         width: 40vw;

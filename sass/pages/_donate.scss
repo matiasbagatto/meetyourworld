@@ -1,6 +1,10 @@
 .donate {
+    height: 85vh;
     padding: 20px 0;
     border-bottom: $border-bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &__title {
         padding-bottom: 10px;
@@ -20,7 +24,7 @@
     justify-content: center;
 
     &__currency {
-        padding: 6px;
+        padding: 10px;
         border: $border-bottom;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;

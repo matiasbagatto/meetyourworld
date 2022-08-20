@@ -270,6 +270,11 @@ body {
   color: #6096BA;
 }
 
+.donate-active {
+  color: #fff;
+  background-color: #6096BA;
+}
+
 @media (min-width: 992px) {
   .nav__list {
     width: 40vw;
@@ -341,8 +346,12 @@ body {
 }
 
 .donate {
+  height: 85vh;
   padding: 20px 0;
   border-bottom: 1px solid #E9ECEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .donate__title {
   padding-bottom: 10px;
@@ -360,7 +369,7 @@ body {
   justify-content: center;
 }
 .donate-content__currency {
-  padding: 6px;
+  padding: 10px;
   border: 1px solid #E9ECEF;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
