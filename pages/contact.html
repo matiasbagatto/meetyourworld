@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-light navbar--max-width">
-            <div class="container-fluid">
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-xl">
                 <a class="navbar-brand" href="../index.html">
                     <img class="logo" src="../logo/logo.png" alt="logo de la pagina">
                 </a>
@@ -26,20 +26,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center justify-content-lg-between navbar-nav--custom">
+                    <ul class="navbar-nav align-items-center nav__list">
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom" href="../index.html">Home</a>
+                            <a class="nav-link nav__link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom" href="./about.html">About</a>
+                            <a class="nav-link nav__link" href="./about.html">About</a>
                         </li>
-                        <li class="nav-item active active--custom">
-                            <a class="nav-link nav-link--custom" href="./contact.html">Contact <span
+                        <li class="nav-item active">
+                            <a class="nav-link active-link nav__link" href="./contact.html">Contact <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link--custom" href="./donate.html"><button
-                                    class="btn--custom">Donate</button></a>
+                            <a class="nav-link btn-custom" href="./donate.html">Donate</a>
                         </li>
                     </ul>
                 </div>
@@ -48,69 +47,64 @@
     </header>
 
     <main>
-        <section class="form-container">
-            <h1 class="form-title">Fill out the form and help us improve this website!</h1>
-            <div class="container-fluid">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="email" class="form-control form__input" id="firstName"
-                            aria-describedby="firstName">
+        <section class="container-fluid contact">
+            <div class="container-xl contact-form">
+                <form class="row g-4">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
                     </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="email" class="form-control form__input" id="lastName" aria-describedby="lastName">
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
                     </div>
-                    <div class="form-group">
-                        <label for="emailAddress">Email address</label>
-                        <input type="email" class="form-control form__input" id="emailAddress"
-                            aria-describedby="emailAddress">
+                    <div class="col-12">
+                        <label for="emailAddress" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailAddress">
                     </div>
-                    <div class="form-group">
-                        <label for="anySuggestions">Any suggestions?</label>
-                        <textarea class="form-control form__input textarea-max-height" id="anySuggestions"
-                            placeholder="I think you can improve your website by..." rows="16"></textarea>
+                    <div class="col-12">
+                        <label for="suggestions" class="form-label">Any suggestions?</label>
+                        <textarea class="form-control" id="suggestions" rows="12"
+                            placeholder="My suggestion is..."></textarea>
                     </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="newsletter" checked>
-                        <label class="form-check-label" for="newsletter">Subscribe to newsletter</label>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="newsletter" id="newsletter" checked>
+                            <label class="form-check-label" for="newsletter">Subscribe to newsletter</label>
+                        </div>
                     </div>
-                    <div class="form-btn">
-                        <button type="submit" class="btn--custom btn-submit">Submit</button>
+                    <div class="col-12 submit">
+                        <button type="submit" class="btn-custom btn-submit">Submit</button>
                     </div>
                 </form>
             </div>
         </section>
 
-        <section class="container-fluid explore">
-            <h2 class="explore__title">EXPLORE</h2>
-            <ul class="explore__list">
-                <li><a class="explore__link" href="./asia.html">Asia</a></li>
-                <li><a class="explore__link" href="./europe.html">Europe</a></li>
-                <li><a class="explore__link" href="./africa.html">Africa</a></li>
-                <li><a class="explore__link" href="./oceania.html">Oceania</a></li>
-                <li><a class="explore__link" href="./north-america.html">North America</a></li>
-                <li><a class="explore__link" href="./south-america.html">South America</a></li>
+        <section class="container-lg explore-basic">
+            <h2 class="explore-basic__title">EXPLORE</h2>
+            <ul class="explore-basic__list">
+                <li><a class="explore-basic__link" href="./asia.html">Asia</a></li>
+                <li><a class="explore-basic__link" href="./africa.html">Africa</a></li>
+                <li><a class="explore-basic__link" href="./europe.html">Europe</a></li>
+                <li><a class="explore-basic__link" href="./oceania.html">Oceania</a></li>
+                <li><a class="explore-basic__link" href="./north-america.html">North America</a></li>
+                <li><a class="explore-basic__link" href="./south-america.html">South America</a></li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <div class="footer">
-            <p class="footer__text">
-                <a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022
-            </p>
-            <div class="social">
-                <a class="social__link" href="https://twitter.com" target="_blank">
-                    <i class="fa-brands fa-twitter fa-2x social__icon"></i>
-                </a>
-                <a class="social__link" href="https://github.com/matiasbagatto" target="_blank">
-                    <i class="fa-brands fa-github fa-2x social__icon"></i>
-                </a>
-                <a class="social__link" href="https://youtube.com" target="_blank">
-                    <i class="fa-brands fa-youtube fa-2x social__icon"></i>
-                </a>
-            </div>
+    <footer class="container-fluid footer">
+        <p class="footer__text"><a class="footer__link" href="../index.html">Meet Your World</a> &copy; 2022</p>
+        <div class="footer-social">
+            <a class="footer-social__link" href="https://twitter.com/bagattomatias" target="_blank">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+            <a class="footer-social__link" href="https://github.com/matiasbagatto" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a class="footer-social__link" href="https://www.linkedin.com/in/matiasbagatto" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
         </div>
     </footer>
 

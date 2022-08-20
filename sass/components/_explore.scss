@@ -14,6 +14,7 @@
     }
 
     &__list {
+        max-width: 650px;
         height: 30vh;
         display: flex;
         flex-direction: column;
@@ -35,8 +36,7 @@
 @media (min-width: 992px) {
     .explore-basic {
         flex-direction: row;
-        justify-content: space-around;
-
+        justify-content: space-evenly;
 
         &__title {
             padding-bottom: 0;

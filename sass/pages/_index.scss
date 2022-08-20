@@ -1,6 +1,6 @@
 .banner {
     background: url("../../images/banner.png");
-    border-bottom: 1px solid $secondary-color;
+    border-bottom: $border-bottom;
 }
 
 .banner-content {

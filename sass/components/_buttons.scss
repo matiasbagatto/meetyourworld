@@ -1,5 +1,5 @@
 .btn-custom {
-    padding: 8px 16px !important;
+    padding: 8px 14px !important;
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -11,5 +11,15 @@
         color: #fff;
         background-color: $third-color;
         transform: scale(1.05);
+    }
+}
+
+.btn-submit {
+    width: 60%;
+    color: #fff;
+    background-color: $third-color;
+
+    &:hover {
+        transform: scale(1.03);
     }
 }

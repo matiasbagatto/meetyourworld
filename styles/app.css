@@ -142,7 +142,7 @@ body {
 }
 
 .btn-custom {
-  padding: 8px 16px !important;
+  padding: 8px 14px !important;
   text-decoration: none;
   border: none;
   border-radius: 5px;
@@ -154,6 +154,15 @@ body {
   color: #fff;
   background-color: #6096BA;
   transform: scale(1.05);
+}
+
+.btn-submit {
+  width: 60%;
+  color: #fff;
+  background-color: #6096BA;
+}
+.btn-submit:hover {
+  transform: scale(1.03);
 }
 
 .explore-basic {
@@ -171,6 +180,7 @@ body {
   text-decoration: 5px underline #6096BA;
 }
 .explore-basic__list {
+  max-width: 650px;
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -189,7 +199,7 @@ body {
 @media (min-width: 992px) {
   .explore-basic {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .explore-basic__title {
     padding-bottom: 0;
@@ -409,6 +419,20 @@ body {
     margin: 0 auto;
     display: flex;
   }
+}
+.contact {
+  border-bottom: 1px solid #E9ECEF;
+}
+
+.contact-form {
+  max-width: 768px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=app.css.map */
