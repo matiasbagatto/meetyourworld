@@ -12,17 +12,17 @@
     align-items: center;
     justify-content: space-between;
 
-    .banner-content__title {
+    &__title {
         font-size: 2rem;
         font-weight: 300;
         align-self: flex-start;
     }
 
-    .banner-content__span {
+    &__span {
         border-bottom: 2px solid $third-color;
     }
 
-    .banner-content__searchbox {
+    &__searchbox {
         width: 80%;
         padding: 20px;
         border: 1px solid $link-color;
@@ -36,7 +36,7 @@
 .explore {
     padding: 20px 0;
 
-    .explore__title {
+    &__title {
         padding-bottom: 50px;
         font-size: 2.2rem;
         font-weight: bold;
@@ -61,14 +61,14 @@
     align-items: center;
     justify-content: center;
 
-    .content-text__title {
+    &__title {
         padding-bottom: 10px;
         font-size: 1.5rem;
         font-weight: 500;
         color: $third-color;
     }
 
-    .content-text__info {
+    &__info {
         padding-bottom: 20px;
         text-align: justify;
         line-height: 1.5;

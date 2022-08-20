@@ -292,15 +292,15 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.banner-content .banner-content__title {
+.banner-content__title {
   font-size: 2rem;
   font-weight: 300;
   align-self: flex-start;
 }
-.banner-content .banner-content__span {
+.banner-content__span {
   border-bottom: 2px solid #6096BA;
 }
-.banner-content .banner-content__searchbox {
+.banner-content__searchbox {
   width: 80%;
   padding: 20px;
   border: 1px solid #343A40;
@@ -313,7 +313,7 @@ body {
 .explore {
   padding: 20px 0;
 }
-.explore .explore__title {
+.explore__title {
   padding-bottom: 50px;
   font-size: 2.2rem;
   font-weight: bold;
@@ -337,13 +337,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-.content-text .content-text__title {
+.content-text__title {
   padding-bottom: 10px;
   font-size: 1.5rem;
   font-weight: 500;
   color: #6096BA;
 }
-.content-text .content-text__info {
+.content-text__info {
   padding-bottom: 20px;
   text-align: justify;
   line-height: 1.5;
@@ -473,6 +473,10 @@ body {
   font-weight: 500;
   border: 1px solid #E9ECEF;
   border-left: none;
+}
+
+.continent {
+  border-bottom: 1px solid #E9ECEF;
 }
 
 /*# sourceMappingURL=app.css.map */
