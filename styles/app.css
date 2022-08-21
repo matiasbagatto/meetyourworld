@@ -181,7 +181,7 @@ body {
   align-items: center;
 }
 .explore-basic__title {
-  padding-bottom: 45px;
+  padding-bottom: 30px;
   font-size: 2rem;
   font-weight: bold;
   font-style: italic;
@@ -290,7 +290,7 @@ body {
 
 .about-content {
   padding: 0 25px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .about-content:last-of-type {
@@ -332,6 +332,11 @@ body {
 .contact {
   padding: 0 20px;
   border-bottom: 1px solid #E9ECEF;
+}
+.contact__input:focus {
+  border-color: #6096BA;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #6096BA;
+  outline: 0 none;
 }
 
 .contact-form {
@@ -387,7 +392,7 @@ body {
 }
 
 .banner-content {
-  height: 25vh;
+  height: 30vh;
   max-width: 768px;
   padding: 15px 0;
   display: flex;
@@ -405,12 +410,18 @@ body {
 }
 .banner-content__searchbox {
   width: 80%;
-  padding: 20px;
+  padding: 23px;
+  font-weight: 500;
   border: 1px solid #343A40;
   border-radius: 50px;
   background: url("../icons/magnifying-glass-solid.svg") no-repeat 18px 18px;
   background-size: 20px;
   background-position: 92%;
+}
+.banner-content__searchbox:focus {
+  border-color: #6096BA;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #6096BA;
+  outline: 0 none;
 }
 
 .continent {
