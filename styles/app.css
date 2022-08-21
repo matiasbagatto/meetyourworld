@@ -258,6 +258,11 @@ body {
   width: 200px;
 }
 
+.nav__list {
+  height: 20vh;
+  justify-content: space-between;
+}
+
 .nav__link {
   color: #343A40;
   transition: all 0.25s ease;
@@ -277,10 +282,9 @@ body {
 
 @media (min-width: 992px) {
   .nav__list {
+    height: auto;
     width: 40vw;
     max-width: 400px;
-    display: flex;
-    justify-content: space-between;
   }
 }
 .about {
