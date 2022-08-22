@@ -134,6 +134,7 @@ table {
 }
 
 body {
+  padding-top: 70px;
   background-color: #F8F9FA;
 }
 
@@ -142,7 +143,7 @@ body {
 }
 
 .btn-custom {
-  padding: 8px 14px !important;
+  padding: 10px 16px !important;
   text-decoration: none;
   border: none;
   border-radius: 5px;
@@ -250,8 +251,10 @@ body {
   transform: scale(1.2);
 }
 
-.header {
+.navbar--custom {
+  background-color: #F8F9FA;
   border-bottom: 1px solid #E9ECEF;
+  box-shadow: 0px -8px 10px #000;
 }
 
 .logo {
@@ -421,11 +424,6 @@ body {
   background: url("../icons/magnifying-glass-solid.svg") no-repeat 18px 18px;
   background-size: 20px;
   background-position: 92%;
-}
-.banner-content__searchbox:focus {
-  border-color: #6096BA;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #6096BA;
-  outline: 0 none;
 }
 
 .continent {

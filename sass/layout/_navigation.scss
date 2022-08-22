@@ -1,5 +1,7 @@
-.header {
+.navbar--custom {
+    background-color: $base-color;
     border-bottom: $border-bottom;
+    box-shadow: 0px -8px 10px #000;
 }
 
 .logo {
