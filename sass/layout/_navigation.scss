@@ -29,7 +29,7 @@
     background-color: $third-color;
 }
 
-@media (min-width: 992px) {
+@media (min-width: $lg) {
     .nav__list {
         height: auto;
         width: 40vw;

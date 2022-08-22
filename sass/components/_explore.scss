@@ -33,7 +33,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $lg) {
     .explore-basic {
         flex-direction: row;
         justify-content: space-evenly;
