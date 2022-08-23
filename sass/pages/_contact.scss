@@ -16,6 +16,5 @@
 }
 
 .submit {
-    display: flex;
-    justify-content: center;
+    @include d-flex(row, center, stretch);
 }

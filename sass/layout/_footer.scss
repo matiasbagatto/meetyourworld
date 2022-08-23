@@ -19,10 +19,9 @@
 }
 
 .footer-social {
+    @include d-flex(row, space-between, stretch);
     max-width: 300px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
 
     .footer-social__link {
         color: $link-color;

@@ -4,13 +4,10 @@
 }
 
 .banner-content {
+    @include d-flex(column, space-between, center);
     height: 30vh;
     max-width: 768px;
     padding: 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 
     &__title {
         font-size: 2rem;
@@ -60,11 +57,8 @@
 }
 
 .content-text {
+    @include d-flex(column, center, center);
     padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     &__title {
         padding-bottom: 10px;

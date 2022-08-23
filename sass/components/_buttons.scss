@@ -1,5 +1,5 @@
 .btn-custom {
-    padding: 10px 16px !important;
+    padding: 10px 15px !important;
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -14,17 +14,14 @@
     }
 }
 
-.btn-submit {
-    width: 60%;
+.btn-custom--active {
+    @extend .btn-custom;
     color: #fff;
     background-color: $third-color;
-
-    &:hover {
-        transform: scale(1.03);
-    }
 }
 
-.btn-send {
+.btn-custom--send {
+    @extend .btn-custom;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 

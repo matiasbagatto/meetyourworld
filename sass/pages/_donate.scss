@@ -1,10 +1,8 @@
 .donate {
+    @include d-flex(row, center, center);
     height: 85vh;
     padding: 20px 0;
     border-bottom: $border-bottom;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &__title {
         padding-bottom: 10px;
@@ -19,12 +17,11 @@
 }
 
 .donate-content {
+    @include d-flex(row, center, stretch);
     padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
 
     &__currency {
-        padding: 10px;
+        padding: 12px;
         border: $border-bottom;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;

@@ -1,9 +1,7 @@
 .explore-basic {
+    @include d-flex(column, flex-start, center);
     max-width: 1200px;
     padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     &__title {
         padding-bottom: 23px;
@@ -14,12 +12,9 @@
     }
 
     &__list {
+        @include d-flex(column, space-between, center);
         max-width: 650px;
         height: 30vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
     }
 
     &__link {
