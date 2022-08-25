@@ -1,7 +1,7 @@
 .navbar--custom {
     background-color: map-get($color-palette, "base-color");
     border-bottom: $border;
-    box-shadow: 0px -8px 10px map-get($color-palette, "black");
+    box-shadow: 0px -8px 10px #000;
 }
 
 .logo {
@@ -27,7 +27,7 @@
 }
 
 .donate-active {
-    color: map-get($color-palette, "white");
+    color: map-get($color-palette, "base-color");
     background-color: map-get($color-palette, "third-color");
 }
 

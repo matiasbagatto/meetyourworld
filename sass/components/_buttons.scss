@@ -8,7 +8,7 @@
     transition: all 0.25s ease;
 
     &:hover {
-        color: map-get($color-palette, "white");
+        color: map-get($color-palette, "base-color");
         background-color: map-get($color-palette, "third-color");
         transform: scale(1.05);
     }
@@ -16,7 +16,7 @@
 
 .btn-custom--active {
     @extend .btn-custom;
-    color: map-get($color-palette, "white");
+    color: map-get($color-palette, "base-color");
     background-color: map-get($color-palette, "third-color");
 }
 

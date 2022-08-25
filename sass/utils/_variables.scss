@@ -3,8 +3,6 @@ $color-palette: (
     secondary-color: #E9ECEF,
     third-color: #6096BA,
     link-color: #343A40,
-    white: #FFF,
-    black: #000
 );
 $border: 1px solid map-get($color-palette, "secondary-color");
 $md: 768px;
