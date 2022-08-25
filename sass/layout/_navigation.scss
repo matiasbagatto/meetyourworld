@@ -1,7 +1,7 @@
 .navbar--custom {
-    background-color: $base-color;
-    border-bottom: $border-bottom;
-    box-shadow: 0px -8px 10px #000;
+    background-color: map-get($color-palette, "base-color");
+    border-bottom: $border;
+    box-shadow: 0px -8px 10px map-get($color-palette, "black");
 }
 
 .logo {
@@ -14,21 +14,21 @@
 }
 
 .nav__link {
-    color: $link-color;
+    color: map-get($color-palette, "link-color");
     transition: all 0.25s ease;
 
     &:hover {
-        color: $third-color;
+        color: map-get($color-palette, "third-color");
     }
 }
 
 .active-link {
-    color: $third-color;
+    color: map-get($color-palette, "third-color");
 }
 
 .donate-active {
-    color: #fff;
-    background-color: $third-color;
+    color: map-get($color-palette, "white");
+    background-color: map-get($color-palette, "third-color");
 }
 
 @media (min-width: $lg) {

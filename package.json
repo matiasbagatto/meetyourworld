@@ -1,0 +1,19 @@
+{
+  "name": "meetyourworld",
+  "version": "1.0.0",
+  "description": "Proyecto final del curso de Desarrollo Web en Coderhouse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasbagatto/MYW.git"
+  },
+  "author": "Matias Bagatto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasbagatto/MYW/issues"
+  },
+  "homepage": "https://github.com/matiasbagatto/MYW#readme"
+}

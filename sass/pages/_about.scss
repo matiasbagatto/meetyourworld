@@ -1,6 +1,6 @@
 .about {
     padding: 20px 0;
-    border-bottom: $border-bottom;
+    border-bottom: $border;
 }
 
 .about-content {
@@ -25,11 +25,11 @@
 .content-text__link {
     text-decoration: none;
     font-weight: bold;
-    color: $link-color;
+    color: map-get($color-palette, "link-color");
 
     &:hover {
         text-decoration: underline;
-        color: $third-color;
+        color: map-get($color-palette, "third-color");
     }
 }
 

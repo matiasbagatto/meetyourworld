@@ -8,7 +8,7 @@
         font-size: 2rem;
         font-weight: bold;
         font-style: italic;
-        text-decoration: 5px underline $third-color;
+        text-decoration: 5px underline map-get($color-palette, "third-color");
     }
 
     &__list {
@@ -18,12 +18,12 @@
     }
 
     &__link {
-        color: #000;
+        color: map-get($color-palette, "black");
         text-decoration: none;
         transition: all 0.25s ease;
 
         &:hover {
-            color: $third-color;
+            color: map-get($color-palette, "third-color");
         }
     }
 }

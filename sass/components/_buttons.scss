@@ -3,21 +3,21 @@
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    color: $link-color;
-    background-color: $secondary-color;
+    color: map-get($color-palette, "link-color");
+    background-color: map-get($color-palette, "secondary-color");
     transition: all 0.25s ease;
 
     &:hover {
-        color: #fff;
-        background-color: $third-color;
+        color: map-get($color-palette, "white");
+        background-color: map-get($color-palette, "third-color");
         transform: scale(1.05);
     }
 }
 
 .btn-custom--active {
     @extend .btn-custom;
-    color: #fff;
-    background-color: $third-color;
+    color: map-get($color-palette, "white");
+    background-color: map-get($color-palette, "third-color");
 }
 
 .btn-custom--send {
@@ -28,4 +28,9 @@
     &:hover {
         border-radius: 5px;
     }
+}
+
+.btn-custom--submit {
+    @extend .btn-custom--active;
+    width: 55%;
 }

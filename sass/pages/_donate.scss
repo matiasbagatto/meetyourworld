@@ -2,7 +2,7 @@
     @include d-flex(row, center, center);
     height: 85vh;
     padding: 20px 0;
-    border-bottom: $border-bottom;
+    border-bottom: $border;
 
     &__title {
         padding-bottom: 10px;
@@ -12,7 +12,7 @@
 
     &__thanks {
         font-weight: 600;
-        color: $third-color;
+        color: map-get($color-palette, "third-color");
     }
 }
 
@@ -22,7 +22,7 @@
 
     &__currency {
         padding: 12px;
-        border: $border-bottom;
+        border: $border;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
@@ -30,7 +30,7 @@
     &__input {
         padding: 0 10px;
         font-weight: 500;
-        border: $border-bottom;
+        border: $border;
         border-left: none;
     }
 }

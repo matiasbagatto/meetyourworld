@@ -142,7 +142,7 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.btn-custom, .btn-custom--send, .btn-custom--active {
+.btn-custom, .btn-custom--send, .btn-custom--active, .btn-custom--submit {
   padding: 10px 15px !important;
   text-decoration: none;
   border: none;
@@ -151,14 +151,12 @@ body {
   background-color: #E9ECEF;
   transition: all 0.25s ease;
 }
-.btn-custom:hover, .btn-custom--send:hover, .btn-custom--active:hover {
-  color: #fff;
+.btn-custom:hover, .btn-custom--send:hover, .btn-custom--active:hover, .btn-custom--submit:hover {
   background-color: #6096BA;
   transform: scale(1.05);
 }
 
-.btn-custom--active {
-  color: #fff;
+.btn-custom--active, .btn-custom--submit {
   background-color: #6096BA;
 }
 
@@ -168,6 +166,10 @@ body {
 }
 .btn-custom--send:hover {
   border-radius: 5px;
+}
+
+.btn-custom--submit {
+  width: 55%;
 }
 
 .explore-basic {
@@ -194,7 +196,6 @@ body {
   height: 30vh;
 }
 .explore-basic__link {
-  color: #000;
   text-decoration: none;
   transition: all 0.25s ease;
 }
@@ -253,7 +254,7 @@ body {
 .navbar--custom {
   background-color: #F8F9FA;
   border-bottom: 1px solid #E9ECEF;
-  box-shadow: 0px -8px 10px #000;
+  box-shadow: 0px -8px 10px;
 }
 
 .logo {
@@ -278,7 +279,6 @@ body {
 }
 
 .donate-active {
-  color: #fff;
   background-color: #6096BA;
 }
 

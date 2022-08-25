@@ -1,10 +1,10 @@
 .contact {
     padding: 0 20px;
-    border-bottom: $border-bottom;
+    border-bottom: $border;
 
     &__input:focus {
-        border-color: $third-color;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px $third-color;
+        border-color: map-get($color-palette, "third-color");
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px map-get($color-palette, "third-color");
         outline: 0 none;
     }
 }
