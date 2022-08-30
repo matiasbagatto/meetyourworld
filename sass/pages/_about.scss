@@ -1,6 +1,13 @@
 .about {
     padding: 20px 0;
     border-bottom: $border;
+
+    &__title {
+        padding-bottom: 35px;
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-decoration: 5px underline map-get($color-palette, "third-color");
+    }
 }
 
 .about-content {
