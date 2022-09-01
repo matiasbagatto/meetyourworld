@@ -174,10 +174,6 @@ body {
   width: 55%;
 }
 
-.explore {
-  border-bottom: 1px solid #E9ECEF;
-}
-
 .explore-basic {
   display: flex;
   flex-direction: column;
@@ -464,6 +460,10 @@ body {
   font-style: italic;
   text-align: center;
   text-decoration: 6px underline #6096BA;
+}
+
+.continent {
+  border-bottom: 1px solid #E9ECEF;
 }
 
 .explore-content {

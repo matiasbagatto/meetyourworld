@@ -1,7 +1,3 @@
-.explore {
-    border-bottom: $border;
-}
-
 .explore-basic {
     @include d-flex(column, flex-start, center);
     max-width: 1200px;
