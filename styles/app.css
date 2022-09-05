@@ -237,7 +237,7 @@ body {
   text-decoration: underline #6096BA;
 }
 
-.footer-social {
+.social {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -245,11 +245,11 @@ body {
   max-width: 300px;
   margin: 0 auto;
 }
-.footer-social .footer-social__link {
+.social .social__link {
   color: #343A40;
   transition: all 0.35s ease;
 }
-.footer-social .footer-social__link:hover {
+.social .social__link:hover {
   color: #6096BA;
   transform: scale(1.2);
 }

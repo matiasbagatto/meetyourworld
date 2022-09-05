@@ -18,12 +18,12 @@
     }
 }
 
-.footer-social {
+.social {
     @include d-flex(row, space-between, stretch);
     max-width: 300px;
     margin: 0 auto;
 
-    .footer-social__link {
+    .social__link {
         color: map-get($color-palette, "link-color");
         transition: all 0.35s ease;
 
