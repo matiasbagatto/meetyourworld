@@ -167,7 +167,7 @@ body {
   border-bottom-left-radius: 0;
 }
 .btn-custom--send:hover {
-  border-radius: 5px;
+  transform: none;
 }
 
 .btn-custom--submit {
@@ -378,19 +378,34 @@ body {
   align-items: stretch;
 }
 
+.donate-head {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.donate-head__title {
+  padding-bottom: 25px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-decoration: 5px underline #6096BA;
+}
+.donate-head__description {
+  padding-bottom: 35px;
+  font-size: 1.2rem;
+}
+
 .donate {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  height: 85vh;
+  align-items: start;
+  height: 45vh;
   padding: 20px 0;
   border-bottom: 1px solid #E9ECEF;
 }
 .donate__title {
-  padding-bottom: 10px;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
+  padding-bottom: 15px;
 }
 .donate__thanks {
   font-weight: 600;
@@ -402,7 +417,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  padding-bottom: 10px;
+  padding: 0 0 10px;
 }
 .donate-content__currency {
   padding: 12px;
@@ -410,13 +425,56 @@ body {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.donate-content__currency:focus {
+  outline: none;
+}
 .donate-content__input {
+  width: 35%;
   padding: 0 10px;
   font-weight: 500;
   border: 1px solid #E9ECEF;
   border-left: none;
 }
+.donate-content__input:focus {
+  outline: none;
+}
 
+.ongs {
+  padding: 20px;
+  border-bottom: 1px solid #E9ECEF;
+}
+.ongs__title {
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.ongs-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.ongs-logos__logo {
+  transition: all 0.25s ease;
+}
+.ongs-logos__logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .ongs__title {
+    padding-bottom: 50px;
+  }
+  .ongs-logos {
+    flex-direction: column;
+  }
+  .ongs-logos__logo {
+    padding-bottom: 50px;
+  }
+  .ongs-logos__logo:last-child {
+    padding-bottom: 0;
+  }
+}
 .banner {
   background: url("../../images/banner.png");
   border-bottom: 1px solid #E9ECEF;
