@@ -260,10 +260,6 @@ body {
   box-shadow: 0px -8px 10px #000;
 }
 
-.logo {
-  width: 200px;
-}
-
 .nav__list {
   height: 20vh;
   justify-content: space-between;
@@ -291,6 +287,11 @@ body {
     height: auto;
     width: 40vw;
     max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 224px;
   }
 }
 .about {
