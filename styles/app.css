@@ -462,6 +462,14 @@ body {
   transform: scale(1.05);
 }
 
+.ong-img {
+  filter: grayscale(100%);
+  transition: 0.25s all ease;
+}
+.ong-img:hover {
+  filter: grayscale(0);
+}
+
 @media (max-width: 992px) {
   .ongs__title {
     padding-bottom: 50px;

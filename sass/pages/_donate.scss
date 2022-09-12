@@ -83,6 +83,15 @@
     }
 }
 
+.ong-img {
+    filter: grayscale(100%);
+    transition: 0.25s all ease;
+
+    &:hover {
+        filter: grayscale(0)
+    }
+}
+
 @media (max-width: $lg) {
     .ongs__title {
         padding-bottom: 50px;
